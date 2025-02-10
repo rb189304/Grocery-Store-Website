@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedhia</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/favicon.png">
+    <!--custom js file link-->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+    <a href="#" class="logo">
+        <img src="image/LOGO.jpeg" alt="Dedhia Logo" style="height: 40px;">
+    </a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#resHead">Store</a>
+        <a href="#about">About Us</a>
+        <a href="#order">order</a>
+        <a href="#popular">Best Sellers</a>
+        <a href="#menu">Seasonal</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+    
+    <div class="icons">
+        <!-- <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="./ShoppingCart.html" ><div id="cart-btn" class="fas fa-shopping-cart"></div></a>
+        <div id="login-btn" class="fas fa-user"></div> -->
+    </div>
+
+</header>
+
+<section class="search-form-container">
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</section>
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span>welcome foodies</span>
+        <h3>spices for various tastes</h3>
+        <p>explore the authentic foodies. treat yourself to delish foodies.</p>
+        <a href="#resHead" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="image/BG-1.png" alt="" class="home-img">
+    </div>
+
+</section>
+<h1 id="resHead">Our Store</h1>
+<section class="category">
+
+   <a href="./GrainOilMasala.html" class="box">
+       <img src="image/CateGory.webp" alt="">
+       <h3>Foodgrain, Oil & Masala</h3>
+   </a>
+
+    <a href="./FruitsAndVegetables.html" class="box">
+        <img src="image/CateGory-1.webp" alt="">
+        <h3>Fruits & Vegetables</h3>
+    </a>
+
+    <a href="./DairyAndBakery.html" class="box">
+        <img src="image/CateGory-2.webp" alt="">
+        <h3>Dairy & Bakery</h3>
+    </a>
+
+    <a href="./HomeCare.html" class="box">
+        <img src="image/CateGory-3.webp" alt="">
+        <h3>Home Care</h3>
+    </a>
+
+    <a href="./BrandedFood.html" class="box">
+        <img src="image/CateGory-4.webp" alt="">
+        <h3>Branded Food</h3>
+    </a>
+    <a href="./NonVEG.html" class="box">
+        <img src="image/CateGory-5.webp" alt="">
+        <h3>Non Veg</h3>
+    </a>
+    <a href="./Beverages.html" class="box">
+        <img src="image/CateGory-6.webp" alt="">
+        <h3>Beverages</h3>
+    </a>
+    <a href="./PersonalCare.html" class="box">
+        <img src="image/CateGory-7.webp" alt="">
+        <h3>Personal Care</h3>
+    </a>
+    <a href="./frozenFood.html" class="box">
+        <img src="image/CateGory-8.png" alt="">
+        <h3>Frozen Food</h3>
+    </a>
+    <a href="./HomeAndKitchen.html" class="box">
+        <img src="image/CateGory-9.webp" alt="">
+        <h3>Home & Kitchen</h3>
+    </a>
+    <a href="./Ayurvedic.html" class="box">
+        <img src="image/CateGory-10.webp" alt="">
+        <h3>Ayurveda</h3>
+    </a>
+    <a href="./BabyCare.html" class="box">
+        <img src="image/CateGory-11.webp" alt="">
+        <h3>Baby Care</h3>
+    </a>
+    <!-- <a href="pageone.html" class="box">
+        <img src="image/res-14.png" alt="">
+        <h3>The Spice Hut</h3>
+    </a> -->
+</section>
+
+<!-- category section ends -->
+
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="image/WhyChoose.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <span>why choose us?</span>
+        <h3 class="title">what's make our food delicious!</h3>
+        <p>It's all about the smell, the taste, how it looks, is it crunchy and how does it feel in mouth. </p>
+        <!-- <a href="#" class="btn">read more</a> -->
+        <div class="icons-container">
+            <div class="icons">
+                <img src="image/serv-1.png" alt="">
+                <h3>fast delivery</h3>
+            </div>
+            <div class="icons">
+                <img src="image/serv-2.png" alt="">
+                <h3>fresh food</h3>
+            </div>
+            <div class="icons">
+                <img src="image/serv-3.png" alt="">
+                <h3>best quality</h3>
+            </div>
+            <div class="icons">
+                <img src="image/serv-4.png" alt="">
+                <h3>24/7 support</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="order" id="order">
+
+    <div class="heading">
+        <span>order now</span>
+        <h3>fastest home delivery</h3>
+    </div>
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <img src="image/icon-1.png" alt="">
+            <h3>8:00am to 11:00pm</h3>
+        </div>
+
+        <div class="icons">
+            <img src="image/icon-2.png" alt="">
+            <h3>+91 08888 77110</h3>
+        </div>
+
+        <div class="icons">
+            <img src="image/icon-3.png" alt="">
+            <h3>Shop 1 & 2, Radharishna Bhuvan, Bazaar peth, near Canara Bank, Agashi, Virar West - 401301</h3>
+        </div>
+
+    </div>
+</section>
+
+<section class="popular" id="popular">
+
+    <div class="heading">
+        <span>Best Sellers</span>
+        <h3>Our Products</h3>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/BestSellers/BestSellers.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Tata Salt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (60) </span>
+                </div>
+                <div class="price">₹80.00 <span>₹120.00</span></div>
+                <a href="./pagetwo.html" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/BestSellers/BestSellers-1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>SunFlower Oil</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span> (100) </span>
+                </div>
+                <div class="price">₹70.00 <span>₹80.00</span></div>
+                <a href="./pagetwo.html" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/BestSellers/BestSellers-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Maggie 4 Pack</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (75) </span>
+                </div>
+                <div class="price">₹125.00 <span>₹160.00</span></div>
+                <a href="./pagetwo.html" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/BestSellers/BestSellers-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Toor daal</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (120) </span>
+                </div>
+                <div class="price">₹90.00 <span>₹130.00</span></div>
+                <a href="./pagetwo.html" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/BestSellers/BestSellers-4.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Jeera</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (70) </span>
+                </div>
+                <div class="price">₹100.00 <span>₹130.00</span></div>
+                <a href="./pagetwo.html" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/BestSellers/BestSellers-5.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Moong Dal</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span> (85) </span>
+                </div>
+                <div class="price">₹120.00 <span>₹150.00</span></div>
+                <a href="./pagetwo.html" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/BestSellers/BestSellers-6.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Ashirvad Atta</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span> (90) </span>
+                </div>
+                <div class="price">₹100.00 <span>₹170.00</span></div>
+                <a href="./pagetwo.html" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="image">
+                <img src="image/BestSellers/BestSellers-7.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Peanut Butter</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span> (70) </span>
+                </div>
+                <div class="price">₹100.00 <span>₹150.00</span></div>
+                <a href="./pagetwo.html" class="btn">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- popular section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <div class="row-banner">
+        <div class="content">
+            <span>Fruits and vegetables</span>
+            <h3>Exotic</h3>
+            <p>Fresh fruits and veggies</p>
+            <a href="./pagetwo.html" class="btn">order now</a>
+        </div>
+    </div>
+
+    <div class="grid-banner">
+        <div class="grid">
+            <img src="image/SpecialOffer.png" alt="">
+            <div class="content">
+                <span>special offer</span>
+                <h3>upto 20% off</h3>
+                <a href="./pagetwo.html" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="grid">
+            <img src="image/SpecialOffer-1.png" alt="">
+            <div class="content center">
+                <span>special offer</span>
+                <h3>upto 50% extra</h3>
+                <a href="./pagetwo.html" class="btn">order now</a>
+            </div>
+        </div>
+        <div class="grid">
+            <img src="image/SpecialOffer-2.png" alt="">
+            <div class="content">
+                <span>limited offer</span>
+                <h3>100% cashback</h3>
+                <a href="./pagetwo.html" class="btn">order now</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <div class="heading">
+        <span>Seasonal Menu</span>
+        <h3>Our Produts</h3>
+    </div>
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="image/Seasonal/Seasonal.png" alt="">
+            <div class="content">
+                <h3>Broccoli</h3>
+                <div class="price">₹40.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/Seasonal/Seasonal-1.png" alt="">
+            <div class="content">
+                <h3>Cadbury Favourites</h3>
+                <div class="price">₹60.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/Seasonal/Seasonal-2.png" alt="">
+            <div class="content">
+                <h3>Cadbury Tri-Flavour</h3>
+                <div class="price">₹50.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/Seasonal/Seasonal-3.png" alt="">
+            <div class="content">
+                <h3>Strawberry</h3>
+                <div class="price">₹30.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/Seasonal/Seasonal-4.png" alt="">
+            <div class="content">
+                <h3>Kala Jamun Ice cream</h3>
+                <div class="price">₹65.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/Seasonal/Seasonal-5.png" alt="">
+            <div class="content">
+                <h3>Mango Ice cream</h3>
+                <div class="price">₹55.00</div>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<section class="blogs" id="blogs">
+
+    <div class="heading">
+        <span>our blogs</span>
+        <h3>our stories</h3>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 19th December, 2021 </h3>
+                <img src="image/Blog/Blog.png" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                    <a href="#"> <i class="fas fa-tag"></i> Health / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Diet / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Nutrition  </a>
+                </div>
+                <h3>Healthy Diet</h3>
+                <p>Healthy Snack Ideas for Busy People.</p>
+                <a href="https://www.healthline.com/nutrition/healthy-snacks-for-work/" class="btn">read more</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 15th February, 2022 </h3>
+                <img src="image/Blog/Blog-1.png" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                    <a href="#"> <i class="fas fa-tag"></i> Smart Shopping / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Wellness / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Facts  </a>
+                </div>
+                <h3>Lebels</h3>
+                <p>How to Read Food Labels: What You Need to Know</p>
+                <a href="https://www.royallabel.com/blog/tips-for-reading-food-labels/" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <h3> <i class="fas fa-calendar"></i> 25th April, 2022 </h3>
+                <img src="image/Blog/Blog-2.png" alt="">
+            </div>
+            <div class="content">
+                <div class="tags">
+                    <a href="#"> <i class="fas fa-tag"></i> Farm Fresh / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> LifeStyle / </a>
+                    <a href="#"> <i class="fas fa-tag"></i> Harvest  </a>
+                </div>
+                <h3>Seasonal Products</h3>
+                <p>Seasonal Produce Guide: What's Fresh This Month</p>
+                <a href="https://eatbobos.com/blogs/health-nutrition/seasonal-produce-chart-monthly/" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="newsletter">
+        <h3>newsletter</h3>
+        <form action="">
+            <input type="email" name="" placeholder="Enter your email" id="">
+            <input type="submit" value="subscribe">
+        </form>
+    </div>
+    <div class="bottom">
+
+        <div class="share">
+            <a href="https://www.facebook.com/st.fit/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/sfitborivali?lang=en" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/sfit_engg_official/?hl=en" class="fab fa-instagram"></a>
+            <a href="https://in.linkedin.com/school/sfit/" class="fab fa-linkedin"></a>
+            <a href="https://www.minecraft.net/en-us" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="credit"> &copy;2022<span> Foddies</span>  all rights reserved </div>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
